@@ -6,12 +6,24 @@ package com.myspace.gitprojet;
 
 public class oneObj implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public oneObj() {
-    }
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String name;
 
+	public oneObj() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public oneObj(java.lang.String name) {
+		this.name = name;
+	}
 
 }
